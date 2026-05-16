@@ -2,6 +2,8 @@
 
 A clean starter for building local Alt plugins with React, Vite+, Tailwind CSS, shadcn/ui-style components, and `@alt/plugin-sdk`.
 
+![Alt React Plugin Template running inside Alt](docs/alt-react-plugin-template-preview.png)
+
 Plugins built from this template compile to static files and run inside Alt's sandboxed plugin view. They should never import Electron, Node APIs, filesystem APIs, secrets, or direct network clients. Use the Alt Plugin SDK for every host interaction.
 
 ## Stack
