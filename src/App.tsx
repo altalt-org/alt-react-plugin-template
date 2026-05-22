@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { Activity, Bell, CheckCircle2, Database, FilePlus2, PanelRightOpen } from "lucide-react";
-import { alt } from "@alt/plugin-sdk";
-import type { PluginActiveNoteSummary, PluginStorageValue } from "@alt/plugin-sdk";
+import { alt } from "alt-plugin-sdk";
+import type { PluginActiveNoteSummary, PluginStorageValue } from "alt-plugin-sdk";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

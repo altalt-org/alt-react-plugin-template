@@ -1,6 +1,6 @@
 # Alt React Plugin Template
 
-A clean starter for building local Alt plugins with React, Vite+, Tailwind CSS, shadcn/ui-style components, and `@alt/plugin-sdk`.
+A clean starter for building local Alt plugins with React, Vite+, Tailwind CSS, shadcn/ui-style components, and `alt-plugin-sdk`.
 
 ![Alt React Plugin Template running inside Alt](docs/alt-react-plugin-template-preview.png)
 
@@ -12,7 +12,7 @@ Plugins built from this template compile to static files and run inside Alt's sa
 - Vite React TypeScript app
 - Tailwind CSS v4 with `@tailwindcss/vite`
 - shadcn/ui-style local components
-- `@alt/plugin-sdk` for manifest typing and runtime SDK calls
+- `alt-plugin-sdk` for manifest typing and runtime SDK calls
 - Static `manifest.json` copied into `dist/` during build
 
 ## Requirements
