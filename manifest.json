@@ -3,7 +3,7 @@
   "name": "React Plugin Template",
   "version": "1.0.0",
   "entry": "index.html",
-  "permissions": ["storage", "appState:read", "events:subscribe", "actions:notes"],
+  "permissions": ["storage", "appState:read", "events:subscribe", "notes:write", "notes:select"],
   "description": "A clean React, Tailwind CSS, and shadcn/ui starter for Alt plugins.",
   "author": "Alt"
 }

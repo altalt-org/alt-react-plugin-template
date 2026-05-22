@@ -73,8 +73,8 @@ The sample app demonstrates:
 - `alt.storage.get/set`
 - `alt.state.getActiveNoteSummary`
 - `alt.events.subscribe('activeNoteChanged')`
-- `alt.actions.invoke('notes.create')`
-- `alt.actions.invoke('notes.select')`
+- `alt.notes.create({ title, folderId? })`
+- `alt.notes.select({ noteId })`
 
 Keep SDK calls permissioned and defensive. Runtime validation still happens in Alt; TypeScript is only authoring support.
 

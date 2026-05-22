@@ -94,12 +94,12 @@ export default function App() {
 
   const createNote = useCallback(() => {
     void run("Create note", async () => {
-      const note = await alt.actions.invoke("notes.create", {
+      const note = await alt.notes.create({
         title: `Plugin note ${new Date().toLocaleTimeString()}`,
         folderId: null,
       });
       if (note.id) {
-        await alt.actions.invoke("notes.select", { noteId: note.id });
+        await alt.notes.select({ noteId: note.id });
       }
       pushLog("Created note", note);
     });
