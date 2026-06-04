@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vp dev",
     "build": "pnpm typecheck && vp build && node scripts/copy-manifest.mjs",
+    "publish": "pnpm build && node scripts/create-dist-zip.mjs",
     "preview": "vp preview",
     "check": "vp check",
     "format": "vp fmt",

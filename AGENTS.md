@@ -16,11 +16,13 @@ Use `pnpm`.
 pnpm install
 pnpm dev
 pnpm build
+pnpm run publish
 pnpm check
 pnpm typecheck
 ```
 
 `pnpm build` must leave a valid `dist/manifest.json` at the build root.
+`pnpm run publish` must build the plugin and create `dist.zip` at the build root.
 
 ## Runtime Constraints
 
@@ -43,6 +45,7 @@ Use `alt-plugin-sdk` for host interactions. The only expected global from Alt is
 - `src/lib/utils.ts`: shared utility helpers.
 - `src/index.css`: Tailwind v4 import and CSS variable tokens.
 - `scripts/copy-manifest.mjs`: build helper that copies the manifest to `dist/`.
+- `scripts/create-dist-zip.mjs`: publish helper that creates `dist.zip` from `dist/`.
 
 ## Implementation Guidelines
 

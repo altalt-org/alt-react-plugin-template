@@ -50,6 +50,14 @@ The build output includes:
 - `dist/index.html`
 - bundled static assets under `dist/assets/`
 
+To create an installable archive:
+
+```bash
+pnpm run publish
+```
+
+This builds the plugin and writes `dist.zip`.
+
 ## Project Structure
 
 ```text
@@ -57,6 +65,7 @@ The build output includes:
 ├── manifest.json              # Alt plugin manifest copied into dist/
 ├── components.json            # shadcn/ui component config
 ├── scripts/copy-manifest.mjs  # build helper
+├── scripts/create-dist-zip.mjs # publish helper
 ├── src/
 │   ├── App.tsx                # sample plugin surface
 │   ├── main.tsx               # React entrypoint
@@ -92,6 +101,7 @@ Edit `manifest.json` before shipping:
 ```bash
 pnpm dev        # Vite+ dev server
 pnpm build      # typecheck, production build, copy manifest
+pnpm run publish # build and create dist.zip
 pnpm preview    # preview built output
 pnpm check      # Vite+ format/lint/type checks
 pnpm lint       # Vite+ lint
